@@ -7,6 +7,8 @@ This might not work if you're not using Bash and a Mac.
 
 ## How to install it:
 
+*Make sure you have installed python 3*
+
 1. Clone this Repo in ```~```.
 2. Add ```source ~/remindme/.remindme.sh``` to your ```.bashrc``` and ```.bash_profile```
 
