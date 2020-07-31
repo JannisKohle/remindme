@@ -2,7 +2,8 @@ import os
 import sys
 import time
 
-with open("~/remindme/alarm.txt", "r+") as f:
+alarmPath = os.path.expanduser("~/remindme/alarm.txt")
+with open(alarmPath, "r+") as f:
     alarm = f.read()
 
 method = sys.argv[1]
@@ -16,22 +17,24 @@ if minutes == 0:
 
 if method == "in":
     counter = minutes
-    for _ in minutes:
+    for _ in range(minutes):
         time.sleep(60)
         counter -= 1
-        print(f"only {counter} minutes left")
-        print()
+        if counter != 0:
+            print(f"only {counter} minutes left")
+            print()
 
     os.system(alarm)
 
 elif method == "every":
     while True:
         counter = minutes
-        for _ in minutes:
+        for _ in range(minutes):
             time.sleep(60)
             counter -= 1
-            print(f"only {counter} minutes left")
-            print()
+            if counter != 0:
+                print(f"only {counter} minutes left")
+                print()
 
         os.system(alarm)
 
