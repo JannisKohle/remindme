@@ -7,9 +7,8 @@ This might not work if you're not using Bash and a Mac.
 
 ## How to install it:
 
-1. Clone this Repo
-2. Move ```.remindme.sh``` into your ```~``` directory.
-3. Add ```source ~/.remindme.sh``` to your ```.bashrc``` and ```.bash_profile```
+1. Clone this Repo in ```~```.
+2. Add ```source ~/remindme/.remindme.sh``` to your ```.bashrc``` and ```.bash_profile```
 
 ## How to use it:
 
