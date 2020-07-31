@@ -16,3 +16,7 @@ This might not work if you're not using Bash and a Mac.
 
 To make remindme remind you once in x minutes, do ```remindme in x```; x must be an integer > 0.
 If you want to get reminded every x minutes, use the command ```remindme every x```; x must be an int > 0.
+
+## Customizing the alarm:
+
+Edit ```alarm.txt```.
